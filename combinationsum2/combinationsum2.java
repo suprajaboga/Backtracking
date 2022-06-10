@@ -3,7 +3,7 @@ import java.util.*;
 
 public class combinationsum2
 {
-	public static void print(int start, int arr[], int target, List<Integer> temp, List<List<Integer>> res)
+    public static void print(int start, int arr[], int target, List<Integer> temp, List<List<Integer>> res)
     {
         if(target == 0)
         {
@@ -31,9 +31,9 @@ public class combinationsum2
     }
     public static void main(String args[])
     {
-		int target = 8;
-		int arr[] = new int[] {10,1,2,7,6,1,5};
-		List<List<Integer>> ans = combine(target,arr);
-		System.out.println(ans);
+	int target = 8;
+	int arr[] = new int[] {10,1,2,7,6,1,5};
+	List<List<Integer>> ans = combine(target,arr);
+	System.out.println(ans);
     }
 }
