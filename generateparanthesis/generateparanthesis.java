@@ -8,8 +8,13 @@ public class generateparanthesis
 	{
 		if(current.length() == 2*n)
 		{
-			result.add(current);
-			return;
+			if(result.contains(current))
+				return;
+			else
+			{
+				result.add(current);
+				return;
+			}
 		}
 		if(open < n)
 			findAll(current+"(", open+1, close, result, n);
@@ -19,8 +24,8 @@ public class generateparanthesis
 	public static List<String> generateParanthesis(int n)
 	{
 		List<String> res = new ArrayList<>();
-        findAll("(",1,0,res,n);
-        return res;
+		findAll("(",1,0,res,n);
+		return res;
 	}
 	public static void main(String args[])
 	{
